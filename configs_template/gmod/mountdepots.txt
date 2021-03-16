@@ -1,0 +1,13 @@
+"gamedepotsystem"
+{
+	"cstrike"	"1"
+	"tf"		"1"
+	"hl1"		"0"
+	"hl1_hd"	"0"
+	"hl2"		"0"
+	"hl2mp"		"1"
+	"episodic"	"0"
+	"ep2"		"0"
+	"lostcoast"	"0"
+}
+
