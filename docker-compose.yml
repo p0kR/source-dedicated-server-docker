@@ -4,6 +4,7 @@ services:
     image: p0kr/source-dedicated-server
     user: "1000:1000"
     ports:
+      - 1200:1200
       - 27015:27015
       - 27020:27020/udp
       - 27005:27005/udp

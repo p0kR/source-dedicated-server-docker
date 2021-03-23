@@ -25,6 +25,7 @@ ENV MAX_PLAYERS 16
 ENV SERVER_TOKEN IAmAnInvalidKey
 
 # the server needs these 4 ports exposed by default
+EXPOSE 1200
 EXPOSE 27015
 EXPOSE 27020/udp
 EXPOSE 27005/udp
