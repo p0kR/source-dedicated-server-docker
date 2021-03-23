@@ -56,7 +56,7 @@ function shutdownServerGracefully()
 }
 
 # catch Docker's SIGTERM, then then a SIGINT to the Valheim server process
-trap 'shutdownValheimGracefully "$SERVER_PID"' SIGTERM
+trap 'shutdownServerGracefully "$SERVER_PID"' SIGTERM
 
 export templdpath=$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
