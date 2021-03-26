@@ -93,7 +93,7 @@ steamcmd/steamcmd.sh +login anonymous \
 +app_update 232250 validate \
 +force_install_dir ${HL2DM_SERVER_DIR} \
 +app_update 232370 validate \
-+exit > "${ROOT_SERVER_DIR}/steamcmd_log.txt"
++exit #> "${ROOT_SERVER_DIR}/steamcmd_log.txt"
 
 
 # TODO if not existent: copy config files
