@@ -23,6 +23,7 @@ ENV GAME terrortown
 ENV MAP gm_flatgrass
 ENV MAX_PLAYERS 16
 ENV SERVER_TOKEN IAmAnInvalidKey
+ENV AUTH_KEY IAmAnInvalidKey
 
 # the server needs these 4 ports exposed by default
 EXPOSE 1200/tcp
