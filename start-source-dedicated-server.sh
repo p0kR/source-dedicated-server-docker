@@ -100,9 +100,9 @@ steamcmd/steamcmd.sh +login anonymous \
 
 cd ${GAME_DIR}
 
-echo "${GAME_DIR}/srcds_run -authkey ${AUTH_KEY} -game ${GAME_ARG} -port ${GAME_PORT} +clientport ${CLIENT_PORT} +maxplayers ${MAX_PLAYERS} +map ${MAP} ${WORKSHOP_COLLECTION_ARG} &"
+echo "${GAME_DIR}/srcds_run -authkey ${AUTH_KEY} -game ${GAME_ARG} -port ${GAME_PORT} +clientport ${CLIENT_PORT} +sv_setsteamaccount \"${SERVER_TOKEN}\" +maxplayers ${MAX_PLAYERS} +map ${MAP} ${WORKSHOP_COLLECTION_ARG} &"
 
-${GAME_DIR}/srcds_run -authkey ${AUTH_KEY} -game ${GAME_ARG} -port ${GAME_PORT} +clientport ${CLIENT_PORT} +maxplayers ${MAX_PLAYERS} +map ${MAP} ${WORKSHOP_COLLECTION_ARG} &
+${GAME_DIR}/srcds_run -authkey ${AUTH_KEY} -game ${GAME_ARG} -port ${GAME_PORT} +clientport ${CLIENT_PORT} +sv_setsteamaccount "${SERVER_TOKEN}" +maxplayers ${MAX_PLAYERS} +map ${MAP} ${WORKSHOP_COLLECTION_ARG} &
 #+sv_setsteamaccount ${SERVER_TOKEN} &
 SERVER_PID=$!
 echo "Server PID is: $SERVER_PID"
