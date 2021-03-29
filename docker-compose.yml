@@ -7,9 +7,8 @@ services:
       - 1200:1200/tcp
       - 1200:1200/udp
       - 27015:27015/tcp
-      - 27015:27015/udp
+      - 27005-27015:27005-27015/udp
       - 27020:27020/udp
-      - 27005:27005/udp
       - 26900:26900/udp
     volumes:
       - ./root-dir:/home/steam/root-dir
