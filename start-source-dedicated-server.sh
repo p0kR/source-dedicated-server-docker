@@ -100,6 +100,8 @@ steamcmd/steamcmd.sh +login anonymous \
 
 cd ${GAME_DIR}
 
+echo "${GAME_DIR}/srcds_run -game ${GAME_ARG} -port ${GAME_PORT} +clientport ${CLIENT_PORT} +maxplayers ${MAX_PLAYERS} +map ${MAP} ${WORKSHOP_COLLECTION_ARG} &"
+
 ${GAME_DIR}/srcds_run -game ${GAME_ARG} -port ${GAME_PORT} +clientport ${CLIENT_PORT} +maxplayers ${MAX_PLAYERS} +map ${MAP} ${WORKSHOP_COLLECTION_ARG} &
 #+sv_setsteamaccount ${SERVER_TOKEN} &
 SERVER_PID=$!
